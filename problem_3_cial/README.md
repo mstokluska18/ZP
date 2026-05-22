@@ -16,27 +16,14 @@ Użytkownik może:
 - uruchomić animację i obserwować trajektorie
 - zatrzymać, zresetować i eksperymentować z parametrami
 
----
+## Co robi ten program?
 
-## Jak uruchomić?
+Program wykonuje obliczenia fizyczne dla problemu trzech ciał takie jak:
 
-### Krok 1: Instalowanie wymaganych bibliotek
+- Oblicza przyspieszenia każdego ciała wynikające z grawitacji
+- Wykonuje symulację krok po kroku (metodą numeryczną)
+- Wczytuje dane początkowe z pliku JSON
+- Wyświetla w konsoli stan początkowy i końcowy symulacji
+- Zawiera 4 gotowe konfiguracje układów
 
-Otwórz terminal (konsolę) i wpisz:
-
-pip install numpy scipy matplotlib PySide6
-
-## Plik configs.json
-
-Plik przechowuje gotowe konfiguracje układów trzech ciał w formacie JSON, z których użytkownik może potem korzystać.
-
-**Struktura:**
-- Klucz główny: nazwa konfiguracji
-- W środku: opis co to za konfiguracja, masy, pozycje, prędkości, G, czas symulacji
-
-**Jak dodać własną konfigurację:**
-1. Otwórz configs.json w notatniku
-2. Dodaj nowy wpis przed ostatnią klamrą
-3. Użyj podwójnych cudzysłowów i przecinków między elementami
-4. Zapisz plik i uruchom program
-
+## Aby uruchomić należy wpisać w terminal: python main.py
